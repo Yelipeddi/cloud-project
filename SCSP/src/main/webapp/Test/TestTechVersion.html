@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SCSP Test Application Version Check</title>
+<script type="text/javascript">
+var currentUnixTime = Date.time();
+currentUnixTime = Date.now().getUnixTime();
+document.getElementById("latestVersion").value = currentUnixTime;
+</script>
+</head>
+<body>
+<input id="latestVersion" value="1"/>
+</body>
+</html>

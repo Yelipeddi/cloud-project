@@ -1,0 +1,61 @@
+
+Steps:
+
+1) Creating DB :
+Command : CREATE DATABASE SCSP
+
+2) Creating Table
+Command :
+  CREATE TABLE `SCSP`.`users`
+                 (
+                              `firstname` VARCHAR(45) NOT NULL,
+                              `lastname`  VARCHAR(45) NULL,
+                              `email`     VARCHAR(45) NULL,
+                              `password`  VARCHAR(45) NULL,                         	 
+                              PRIMARY KEY (`email`)
+                 )
+
+3) UserDetails Table :
+ CREATE TABLE `SCSP`.`userDetails`
+ 				(
+ 						`firstname` VARCHAR(45) NOT NULL,	
+  						`email`     VARCHAR(45) NULL,
+  						`subscriptionList` VARCHAR(300) NULL,
+  						 PRIMARY KEY (`email`)
+  				)
+  				
+  				
+  				
+  				
+  				
+ 4) Update query:
+ INSERT INTO `SCSP`.`userDetails` (firstname,email,subscriptionList) VALUES("", "", "") ON DUPLICATE KEY UPDATE    
+firstname="", subscriptionList=""
+
+
+
+
+
+//5) Create technology version check cron table:
+CREATE TABLE `SCSP`.`technologylist`
+ 				(
+ 						`technologyname` VARCHAR(45) NOT NULL,	
+  						`email`     VARCHAR(45) NULL,
+  						`subscriptionList` VARCHAR(300) NULL
+  				)
+  				
+  				
+  				
+6) techversioninfo table:
+techname, currentversion, newversion, inserttime, updatetime, s3_cloudfront_url 
+CREATE TABLE `SCSP`.`techversioninfo`
+ 				(
+ 						`techname` VARCHAR(45) NOT NULL,	
+  						`currentversion`     VARCHAR(45) NULL,
+  						`newversion` VARCHAR(45) NULL,
+  						`inserttime` timestamp NULL,
+  						`updatetime` timestamp NULL,
+  						`s3_cloudfront_url` VARCHAR(300) NULL,
+  						 PRIMARY KEY (`techname`)
+  				)
+  				
