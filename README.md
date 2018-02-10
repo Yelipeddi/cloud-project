@@ -4,12 +4,7 @@ University Name: http://www.sjsu.edu/
 
 Course: Cloud Technologies
 
-Professor Sanjay Garje
-
-ISA: Divyankitha Urs
-
-Student: <br>Ravali N</br>
-           <br>Supreetha Ganapathi</br>
+Student: 
            <br>Abhinaya Yellipeddi</br>
     
 # Software Catalogue Subscription Portal (SCSP)-Introduction
